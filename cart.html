@@ -6,19 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<<<<<<< HEAD
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+=======
     <title>Instacart | Cart</title>
+>>>>>>> aca7c5206c0d6f14521b41f03dd344615925b6af
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
 
-        *{
-            font-family: 'DM Sans', sans-serif;
+
+        body{
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
         }
         #cartbox {
             height: auto;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-            width: 700px;
-            justify-content: center;
+            width: 40%;
+            /* justify-content: center; */
             margin: auto;
+            padding: 40px;
         }
 
         #one {
@@ -29,7 +39,7 @@
             
         }
         #one > h1{
-            color: rgb(52, 53, 56);
+            color: #0AAD0A;
         }
         #one > p1{
             color: rgb(165, 167, 170);
@@ -41,10 +51,10 @@
             border-top: 1px solid rgb(246, 247, 248);
             justify-content: space-between;
             align-items: center;
-            padding: 10px 10px;
+            padding: 10px;
         }
         #two p{
-            font-size: 18px;
+            font-size: 25px;
             font-weight: 600;
             color: rgb(52, 53, 56);
             margin: 3px;
@@ -61,24 +71,21 @@
             align-items: center;
         }
 
-        .imgSec{
-            margin-left: 25px;
-        }
        .imgSec img{
-           width: 80px;
+           width: 70px;
        }
        #container{
            position: relative;
        }
         #container>div {
             display: flex;
-            height: 140px;
+            height: 110px;
             justify-content: flex-start;
             border-bottom: 1px solid rgb(246, 247, 248);
         }
         .cartImg{
-            width: 80px;
-            padding: 20px;
+            width: 100px;
+            /* padding: 20px; */
         }
         .contentBox{
             margin-top: 20px;
@@ -218,15 +225,6 @@
             text-decoration: none;
         }
 
-        .final {
-            color: aliceblue;
-            background-color: green;
-            width: 700px;
-            height: 40px;
-            border-radius: 10px;
-            padding: 10px;
-        }
-
         .final a {
             color: white;
             font-size: 20px;
@@ -249,7 +247,7 @@
         }
 
         .total {
-            color: rgb(255, 35, 35);
+            color: #0AAD0A;
             font-size: 20px;
             text-align: center;
             font-weight: bolder;
@@ -257,8 +255,8 @@
 
         .pname {
             font-size: 15px;
-            margin-left: 50px;
-            margin-top: 30px;
+            margin-left: 40px;
+            margin-top: 20px;
 
         }
 
@@ -334,14 +332,78 @@
             border: 0;
             background-color: white;
         }
+        .final {
+            color: white;
+            background-color: #0AAD0A;
+            width: 40%;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .finalbtn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #navbar{
+            width: 100%;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo{
+           width: 180px;
+        }
+
+        @media only screen and (min-width: 800px) and (max-width: 1099px){
+            #cartbox {
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            width: 60%;
+            /* justify-content: center; */
+            margin: auto;
+            padding: 40px;
+        }
+
+        }
+        @media only screen and (min-width: 600px) and (max-width: 799px){
+            #cartbox {
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            width: 80%;
+            /* justify-content: center; */
+            margin: auto;
+            padding: 40px;
+        }
+
+        }
+        @media only screen and (min-width: 10px) and (max-width: 599px){
+            #cartbox {
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            width: 100%;
+            /* justify-content: center; */
+            margin: auto;
+            padding: 40px;
+        }
+        }
+        
 
     </style>
 </head>
 
 <body>
+    <div id="navbar"><img class="logo" src="homePage/logo.png" alt=""></div>
+
+
+
     <div id="cartbox">
         <div id="one">
-            <h1>Personal Sprouts Farmers Market</h1>
+            <h1>Cart</h1>
             <p1>Shopping in Instacart</p1>
         </div>
         <div id="two">
@@ -378,9 +440,9 @@
             </div>
         </div>
         <div id="container"></div>
-        <div class="emptyDiv"></div>
+        <!-- <div class="emptyDiv"></div> -->
         <p class="total"></p>
-        <button class="final">Go to Checkout</button>
+        <div class="finalbtn"><button class="final">Go to Checkout</button></div>
     </div>
 
 </body>
