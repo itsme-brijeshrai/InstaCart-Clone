@@ -11,6 +11,7 @@ Instacart is an American company that operates a grocery delivery and pick-up se
 - [Brijesh Rai](https://github.com/itsme-brijeshrai)
 - [Ashutosh Chavan](https://github.com/AshutoshvChavan)
 - [Rahul Kailash Pawar](https://github.com/Rahul7874)
+- [Shreshth Raj](https://github.com/ShreshthRaj)
 
 
 ## Features
