@@ -60,9 +60,17 @@
                 <label for="inputAddress" class="form-label">Special instructions</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="(optional)">
               </div>
+              <button class="submitbtn" type="submit">Proceed for payment</button>
         </form>
           <!-- bootstrap address  -->
-          <div class="submitbtn"><a href="">Proceed for payment</a></div>
+          
     </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', addressFun);
+        function addressFun(){
+            alert('Record added successfully...');
+            document.querySelector('form').action = 'payment.html';
+        }
+    </script>
 </body>
 </html>
