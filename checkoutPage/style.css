@@ -25,7 +25,8 @@ body{
     width:300px;
     height:470px;
     margin-top:35px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    margin-left: 25px;
 }
 
 .myForm {
@@ -129,7 +130,7 @@ body{
     gap:100px;
 }
 .box2{
-    width:80%;
+    width:95%;
     height:30%;
     display: flex;
     margin: auto;
@@ -150,8 +151,16 @@ body{
     margin-left: 60px;
 }
 .submit-btn{
-    margin-top: 10px;
-    margin-left: 100px;
+    margin-top: 20px;
+    margin-left: 111px;
+    border: none;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    /* padding-left: 11px; */
+    
+}
+.submit-btn:hover{
+    background-color: red;
+    color:white;
 }
 
 
@@ -176,7 +185,14 @@ body{
         margin-left: 200px;
     }
     .submit-btn{
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: 240px;
+        border: none;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        
+    }
+    .submit-btn:hover{
+        background-color: red;
+        color:whitesmoke;
     }
 }
