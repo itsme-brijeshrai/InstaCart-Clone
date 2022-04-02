@@ -24,7 +24,7 @@ h2{
     margin-bottom: 40px;
 }
 .submitbtn{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     margin-top: 50px;

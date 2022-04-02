@@ -380,7 +380,7 @@
         <div id="container"></div>
         <div class="emptyDiv"></div>
         <p class="total"></p>
-        <button class="final"><a href="checkout.html" target="blank">Go to Checkout</a></button>
+        <button class="final">Go to Checkout</button>
     </div>
 
 </body>
@@ -388,6 +388,7 @@
 </html>
 
 <script>
+    document.querySelector('.final').addEventListener('click', goDeliveryFun);
     var payAmt = document.querySelector('#payAmt');
     var cartData = JSON.parse(localStorage.getItem("cartItem")) || [];
 
@@ -519,6 +520,9 @@
         },0)
         payAmt.innerText = `$ ${total.toFixed(2)}`;
         document.querySelector(".total").innerText = ` Total Items (${numberOfItem}) Subtotal $ (${total.toFixed(2)})`;
+    }
+    function goDeliveryFun(){
+        window.location.href = 'address.html';
     }
 
     displayCart();
