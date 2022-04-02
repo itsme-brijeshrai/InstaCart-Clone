@@ -28,7 +28,7 @@
         }
         .wrapper{
             background-color: #fff;
-            width: 500px;
+            width: 70%;
             padding: 25px;
             margin: 25px auto 0;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -144,9 +144,10 @@
             transition: 0.5s;
         }
         .input_box button{
-            width: 80%;
+            width: 50%;
             background-color: #21cdd3;
             color: #fff;
+            margin-left: 25%;
             border: none;
             padding: 15px;
             border-right: 4px;
@@ -166,7 +167,7 @@
     </div>
     <div class="wrapper">
         <h2>Payment List</h2>
-        <form action="" method="post">
+        <form class="paymentForm" >
             <h4>Account Details</h4>
             <div class="input_group">
                 <div class="input_box">
@@ -201,9 +202,9 @@
             <!--DOB& GENder-->
             <div class="input_group">
                 <div class="input_box">
-                    <input type="text" placeholder="DD" required class="dob"> 
-                    <input type="text" placeholder="MM" required class="dob"> 
-                    <input type="text" placeholder="YYYY" required class="dob"> 
+                    <input type="text" name="dd" placeholder="DD" required class="dob"> 
+                    <input type="text" name="mm" placeholder="MM" required class="dob"> 
+                    <input type="text" name="yyyy" placeholder="YYYY" required class="dob"> 
                 </div>
             </div>
             <div class="input_box">
@@ -219,39 +220,39 @@
                     <h4>Payment Details</h4>
                     <input type="radio" name="pay" class="radio" id="bc1">
                     <label for="bc1"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
-                    <input type="radio" name="pay" class="radio" id="bc2">
+                    <input type="radio" name="pay1" class="radio" id="bc2">
                     <label for="bc2"><span><i class="fa fa-cc-paypal"></i>PayPal</span></label>
                 </div>
             </div>
             <div class="input_group">
                 <div class="input_box">
                     
-                    <input type="tel"  class="name" placeholder="Card Number 1111-2222-3333-4444" required>
+                    <input type="tel" name="card"  class="name" placeholder="Card Number 1111-2222-3333-4444" required>
                     <i class="fa fa-credit-card icon"></i>
                 </div>
             </div>
             <div class="input_group">
                 <div class="input_box">
-                    <input type="tel"  class="name" placeholder="Card CVC" required>
+                    <input type="tel"  name="cvv" class="name" placeholder="Card CVV" required>
                     <i class="fa fa-user icon"></i>
                 </div>
             </div>
             <div class="input_group">
                 <div class="input_box">
                 <div class="input_box">
-                    <input type="number"  class="name" placeholder="Exp Month " required>
+                    <input type="number" name="expM"  class="name" placeholder="Exp Month " required>
                     <i class="fa fa-calender icon"></i>
                 </div>
             </div>
      
                 <div class="input_box">
-                    <input type="number"  class="name" placeholder="Exp Year" required>
+                    <input type="number" name="expY"  class="name" placeholder="Exp Year" required>
                     <i class="fa fa-calender-o icon"></i>
                 </div>
             </div>
             <div class="input_group">
                 <div class="input_box">
-                    <input type="number"  class="name" placeholder="Enter Amount" required>
+                    <input type="number" name="Amt"  class="name" placeholder="Enter Amount" required>
                     <i class="fa fa-money icon"></i>
                 </div>
             </div>
@@ -262,5 +263,14 @@
             </div>
         </form>
     </div>
+
+    <script>
+        document.querySelector(".paymentForm").addEventListener("submit", paymentFun);
+        function paymentFun(){
+            // event.preventDefault();
+            alert('Payment successfull...');
+            document.querySelector(".paymentForm").action = "success.html";
+        }
+    </script>
 </body>
 </html>
