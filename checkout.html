@@ -4,85 +4,88 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>My Example</title>
+<title>Instacart - Same-day Grocery Delivery</title>
 <link rel="stylesheet" href="checkoutPage/style.css">
 </head>
 <body>
 <div class="navbar">
     <img class="imgbar" src="https://www.instacart.com/image-server/180x36/www.instacart.com/assets/beetstrap/brand/2022/instacart-logo-color@3x-6b71df83cfba8c6827f59bff009df3be6e96d484ebdc5da7e6122e9555eae9b6.png">
 </div>
-<div class="checkoutPage">    
-<form class="myForm">
+<div class="checkoutPage">
+     
+    <form class="myForm">
 
-<p>
-<label>Name
-<input type="text" placeholder="user_name" required>
-</label> 
-</p>
+        <p>
+        <label>Name
+        <input type="text" placeholder="user_name" required>
+        </label> 
+        </p>
 
-<p>
-<label>Phone 
-<input type="number" placeholder="phone_number">
-</label>
-</p>
+        <p>
+        <label>Phone 
+        <input type="number" placeholder="phone_number" required>
+        </label>
+        </p>
 
-<p>
-<label>Email 
-<input type="email" placeholder="email_address">
-</label>
-</p>
+        <p>
+        <label>Email 
+        <input type="email" placeholder="email_address" required>
+        </label>
+        </p>
 
-<p>
-    <label>Address 
-    <input type="text" placeholder="Address line ">
-    </label>
-</p>
+        <p>
+        <label>Address 
+        <input type="text" placeholder="Address line " required>
+        </label>
+        </p>
 
-<p>
-    <label>Zip Code 
-    <input type="text" placeholder="Zip_code ">
-    </label>
-</p>
+        <p>
+        <label>Zip Code 
+        <input type="text" placeholder="Zip_code " required>
+        </label>
+        </p>
 
-<p>
-<label>Delivery Date/Time
-<input type="datetime-local" name="pickup_time" required>
-</label>
-</p>
-	
-<p>
-<label>Near By Pickup
-<select id="pickup_place" name="pickup_place">
-<option value="" selected="selected">Select One</option>
-<option value="office" >Townhall Tower</option>
-<option value="town_hall" >White House</option>
-<option value="telepathy" >We'll Guess!</option>
-</select>
-</label> 
-</p>
+        <p>
+        <label>Delivery Date/Time
+        <input type="datetime-local" name="pickup_time" required>
+        </label>
+        </p>
+            
+        <p>
+        <label>Near By Pickup
+        <select id="pickup_place" name="pickup_place">
+        <option value="" selected="selected">Select One</option>
+        <option value="office" >Townhall Tower</option>
+        <option value="town_hall" >White House</option>
+        <option value="telepathy" >We'll Guess!</option>
+        </select>
+        </label> 
+        </p>
 
-<p>
-<label>Dropoff Place
-<input type="text" name="dropoff_place" required list="destinations">
-</label>
+        <p>
+        <label>Dropoff Place
+        <input type="text" name="dropoff_place" required list="destinations">
+        </label>
 
-<datalist id="destinations">
-<option value="Airport">
-<option value="Beach">
-<option value="Fred Flinstone's House">
-</datalist>
-</p>
+        <datalist id="destinations">
+        <option value="Airport">
+        <option value="Beach">
+        <option value="Fred Flinstone's House">
+        </datalist>
+        </p>
 
-<p>
-<label>Special Instructions
-<textarea name="comments" maxlength="500"></textarea>
-</label>
-</p>
+        <p>
+        <label>Special Instructions
+        <textarea name="comments" maxlength="500"></textarea>
+        </label>
+        </p>
 
-<input class="submit" type="submit" placeholder="Continue">
+        <button class="submit">Continue</button>
+    </form>
+    
 
-</form>
-<div class="offer">
+
+    <div class="offer">
     <div class="satisfaction">
         <div>
             <img src="https://www.instacart.com/image-server/96x96/www.instacart.com/assets/checkout/quality_guarantee/ribbon-a93eef7e76db2d7610608da27c5a9f5cb489ba37932c9624309ea1756817018e.png">
@@ -113,8 +116,6 @@
     </div>
     <input class="coupon" type="text" name="coupon" placeholder="Enter your code"><br>
     <input class="submit-btn" type="submit" value="Try your luck">
-    
-
 </div>
 
 <script src="checkoutPage/script.js"></script>

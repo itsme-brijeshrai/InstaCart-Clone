@@ -1,6 +1,5 @@
-document.querySelector(".submit").addEventListener("click",submitinfo);
+document.querySelector(".submit").addEventListener("onclick",submitinfo);
     event.preventDefault();
     function submitinfo(){
-        console.log("submitted");
         window.location.href="payment.html"
     }
