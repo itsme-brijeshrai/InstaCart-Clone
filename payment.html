@@ -9,7 +9,7 @@
         .navbar{
             width: 100%;
             height:80px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; 
+            box-shadow: rgba(77, 77, 77, 0.1) 0px 10px 15px -3px, rgba(84, 84, 84, 0.05) 0px 4px 6px -2px; 
             text-align: center;  
         }
         .navbar .imgbar{
@@ -28,24 +28,24 @@
         }
         .wrapper{
             background-color: #fff;
-            width: 70%;
+            width: 33%;
             padding: 25px;
             margin: 25px auto 0;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
             border-radius: 10px;
         }
         .wrapper h2 {
             background-color: #fcfcfc;
-            color: #21cdd3;
+            color: rgb(59, 59, 59);
             font-size: 24px;
             padding: 10px;
             margin-bottom: 8px;
             text-align: center;
-            border: 1px dashed #21cdd3;
+            border: 1px solid rgb(221, 221, 221);
         }
         .wrapper h4{
             padding-bottom: 5px;
-            color: #21cdd3;
+            color: #0AAD0A;
         }
         .input_group{
             margin-bottom: 8px;
@@ -75,10 +75,10 @@
             color: #333;
         }
         .input_box .name:focus, .dob:focus{
-            -webkit-box-shadow:0 0 2px 1px #21cdd3;
-            -moz-box-shadow:0 0 2px 1px #21cdd3;
-            box-shadow: 0 0 2px 1px #21cdd3;
-            border: 1px solid #21cdd3;
+            -webkit-box-shadow:0 0 2px 1px #0AAD0A;
+            -moz-box-shadow:0 0 2px 1px #0AAD0A;
+            box-shadow: 0 0 2px 1px #0AAD0A;
+            border: 1px solid #0AAD0A;
         }
         .input_box .icon{
             width: 48px;
@@ -99,9 +99,9 @@
             border-right: none;
         }
         .name:focus+.icon{
-            background-color: #21cdd3;
+            background-color: #0AAD0A;
             color: #fff;
-            border: 1px solid #21cdd3;
+            border: 1px solid #0AAD0A;
             border: none;
             transition: 1s;
 
@@ -139,13 +139,13 @@
            
         }
         .radio:checked+label{
-            background-color: #21cdd3;
+            background-color: #0AAD0A;
             color: #fff;
             transition: 0.5s;
         }
         .input_box button{
             width: 50%;
-            background-color: #21cdd3;
+            background-color: #0AAD0A;
             color: #fff;
             margin-left: 25%;
             border: none;
@@ -157,7 +157,36 @@
         }
         .input_box button:hover{
             cursor: pointer;
-            background-color: #05b1a3;
+            background-color: #0AAD0A;
+        }
+        .highlight{
+            font-weight: 600;
+        }
+        .dull{
+            color: grey;
+        }
+
+        @media only screen and (min-width: 421px) and (max-width: 780px){
+            .wrapper{
+            background-color: #fff;
+            width: 60%;
+            padding: 25px;
+            margin: 25px auto 0;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            border-radius: 10px;
+        }
+        
+
+        }
+        @media only screen and (min-width: 40px) and (max-width: 420px){
+            .wrapper{
+            background-color: #fff;
+            width: 80%;
+            padding: 25px;
+            margin: 25px auto 0;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            border-radius: 10px;
+        }
         }
     </style>
 </head>
@@ -166,62 +195,25 @@
         <img class="imgbar" src="https://www.instacart.com/image-server/180x36/www.instacart.com/assets/beetstrap/brand/2022/instacart-logo-color@3x-6b71df83cfba8c6827f59bff009df3be6e96d484ebdc5da7e6122e9555eae9b6.png">
     </div>
     <div class="wrapper">
-        <h2>Payment List</h2>
+        <h2>Payment</h2>
         <form class="paymentForm" >
+            <br>
             <h4>Account Details</h4>
-            <div class="input_group">
-                <div class="input_box">
-                    <input type="text" placeholder="Full Name" required class="name"> 
-                    <i class="fa fa-user icon"></i>
-                </div>
-            </div>
+            
             <div class="input_group">
                 <div class="input_box">
                     <input type="text" placeholder="Name On Card" required class="name"> 
                     <i class="fa fa-user icon"></i>
                 </div>
             </div>
-            <div class="input_group">
-                <div class="input_box">
-                    <input type="email" placeholder="Enter Email Address" required class="name"> 
-                    <i class="fa fa-envelope icon"></i>
-                </div>
-            </div>
-            <div class="input_group">
-                <div class="input_box">
-                    <input type="text" placeholder="Enter Address" required class="name"> 
-                    <i class="fa fa-marker icon" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="input_group">
-                <div class="input_box">
-                    <input type="text" placeholder="Enter City" required class="name"> 
-                    <i class="fa fa-instituation icon" aria-hidden="true"></i>
-                </div>
-            </div>
-            <!--DOB& GENder-->
-            <div class="input_group">
-                <div class="input_box">
-                    <input type="text" name="dd" placeholder="DD" required class="dob"> 
-                    <input type="text" name="mm" placeholder="MM" required class="dob"> 
-                    <input type="text" name="yyyy" placeholder="YYYY" required class="dob"> 
-                </div>
-            </div>
-            <div class="input_box">
-                <h4>Gender</h4>
-                <input type="radio" name="gender" id="b1" checked class="radio"> 
-                <label for="b1"><span><i class="fa fa gender"></i>Male</span></label>
-                <input type="radio" name="gender" id="b2" checked class="radio"> 
-                <label for="b2"><span><i class="fa fa gender"></i>Female</span></label>
-            </div>
             <!--Payment Details-->
             <div class="input_group">
                 <div class="input_box">
                     <h4>Payment Details</h4>
                     <input type="radio" name="pay" class="radio" id="bc1">
-                    <label for="bc1"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
+                    <label class="highlight" for="bc1"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
                     <input type="radio" name="pay1" class="radio" id="bc2">
-                    <label for="bc2"><span><i class="fa fa-cc-paypal"></i>PayPal</span></label>
+                    <label class="dull" for="bc2"><span><i class="fa fa-cc-paypal"></i>PayPal</span></label>
                 </div>
             </div>
             <div class="input_group">
@@ -250,15 +242,12 @@
                     <i class="fa fa-calender-o icon"></i>
                 </div>
             </div>
-            <div class="input_group">
-                <div class="input_box">
-                    <input type="number" name="Amt"  class="name" placeholder="Enter Amount" required>
-                    <i class="fa fa-money icon"></i>
-                </div>
+            <div class="cartvalue">
+                <h4>Total ₹</h4>
             </div>
             <div class="input_group">
                 <div class="input_box">
-                    <button type="submit">Pay Now</button>
+                    <button class="btnlast" type="submit">Pay Now</button>
                 </div>
             </div>
         </form>
@@ -268,7 +257,6 @@
         document.querySelector(".paymentForm").addEventListener("submit", paymentFun);
         function paymentFun(){
             // event.preventDefault();
-            alert('Payment successfull...');
             document.querySelector(".paymentForm").action = "success.html";
         }
     </script>
