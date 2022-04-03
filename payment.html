@@ -124,7 +124,6 @@
             padding: 13px;
             background-color: #fcfcfc;
             display: inline-block;
-            float: left;
             text-align: center;
             border: 1px solid #c0bfbf;
         }
@@ -261,7 +260,7 @@
             acc += (curr.count * curr.elem.price)
             return acc;
         },0);
-        totalamount.textContent= `$${total.toFixed()}`;
+        totalamount.textContent= `$${total.toFixed(2)}`;
         function paymentFun(){
             // event.preventDefault();
             alert('Payment successfull...');
