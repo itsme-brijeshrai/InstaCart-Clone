@@ -261,7 +261,7 @@
             acc += (curr.count * curr.elem.price)
             return acc;
         },0);
-        totalamount.textContent= `$${total}`;
+        totalamount.textContent= `$${total.toFixed()}`;
         function paymentFun(){
             // event.preventDefault();
             alert('Payment successfull...');
