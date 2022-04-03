@@ -6,12 +6,12 @@ Instacart is an American company that operates a grocery delivery and pick-up se
 
 ## Authors
 
-- [Rajan Chauhan](https://github.com/rajanchauhan165)
-- [Niraj Kumar](https://github.com/im-niraj)
 - [Brijesh Rai](https://github.com/itsme-brijeshrai)
-- [Ashutosh Chavan](https://github.com/AshutoshvChavan)
+- [Rajan Chauhan](https://github.com/rajanchauhan165)
+- [Niraj Kumar](https://github.com/im-niraj) 
 - [Rahul Kailash Pawar](https://github.com/Rahul7874)
 - [Shreshth Raj](https://github.com/ShreshthRaj)
+- [Ashutosh Chavan](https://github.com/AshutoshvChavan)
 
 
 ## Features
@@ -34,7 +34,8 @@ HTML, CSS, JavaScript, Bootstrap
 - Sign up page, login page & order confirmation page is designed & functioned by Rajan.
 - Store & products section is designed & functioned by Niraj.
 - Cart section is designed & functioned by Rahul.
-- Checkout & Payment page is designed by Ashutosh.
+- Deliver page is designed by Shreshth.
+- Payment page is designed by Ashutosh.
 - Github & project meetings are managed by Brijesh.
 - JavaScript parts are revised by Niraj.
 - CSS revision & Readme.md is done by Rajan.
@@ -50,4 +51,3 @@ HTML, CSS, JavaScript, Bootstrap
 ![App Screenshot](https://i.ibb.co/n3YdKFf/Screenshot-154.png)
 ![App Screenshot](https://i.ibb.co/6nXy0RT/Screenshot-155.png)
 ![App Screenshot](https://i.ibb.co/fpgkD9m/Screenshot-156.png)
-
