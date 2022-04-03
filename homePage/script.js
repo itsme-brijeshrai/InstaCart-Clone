@@ -1,3 +1,3 @@
 document.querySelector(".cardbtn").addEventListener("click",function(){
-    window.open("grocery.html","_blank")
+    window.open("signup.html","_blank")
 })
