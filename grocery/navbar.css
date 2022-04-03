@@ -115,31 +115,3 @@
     font-size: 22px;
 }
 
-.searchBar{
-    display: flex;
-    align-items: center;
-    height: 48px;
-    /* border: 1px solid #f6f7f8; */
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    background-color: #f6f7f8;
-    border-radius: 8px;
-    width: 100%;
-    min-width: 200px;
-
-}
-.searchBar input{
-    border: 0;
-    height: 28px;
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 5px;
-    font-size: 20px;
-    background-color: #f6f7f8;
-}
-.searchBar input:focus{
-    outline-width: 0;
-}
-.searchBar i{
-    margin-right: 10px;
-    cursor: pointer;
-}
