@@ -2,6 +2,7 @@
 # Instacart Clone - A Collaborative Project
 
 Instacart is an American company that operates a grocery delivery and pick-up service in the United States and Canada. The company offers its services via a website and mobile app. The service allows customers to order groceries from participating retailers with the shopping being done by a personal shopper.
+Netlify Link: https://glowing-kashata-fe5a26.netlify.app/
 
 
 ## Authors
